@@ -1,0 +1,15 @@
+(1) What will be in Processing (the part that can be customized) and what will be in Java? If you wish, identify this on the mockup screens and indicate here textually which ones wil be done in which part of the App.
+
+The features that will be customizable will be features on every screen except for the splash screen, categories (Find a Place!) screen, and the filter (Narrow it Down!) screen and those features will be: background colors/designs, button shape/color, and adding tunes when clicking on buttons. The filter words can also be changed on the Narrow it Down! screen. Everything else, which includes the account information, Google Maps, and Parse, will be programmed in Java.
+
+(2) What are the empowerment/customizability aspects that you are providing the middle school students (next summer, when I teach them Processing so they can go and cusotmize the code)? Which member of your team is responsible for this separation? This person will also be responsible for the Processing part of the App.
+
+As said above, the features of the app that will be done in processing are the visuals in respect to the backgrounds, buttons, and any tunes that can be added to the buttons or even the screens. This will give students empowerment by letting them feel as though they are designing the app exactly as they want. Maryam Eneim will be working on this portion of the application.
+
+(3) What assets (graphics, music, animation) are being planned for your App? List them. Who will do them in your group? If you need help from Prof. McAfee or his students, list clearly what you want. I will give them the links to Github so they can see what you are seeking. They will send them to you and you can upload them to the site. Or. they can post them at their Github site and  you can 'copy' them over. Which team member is reponsbile for this communication and build up of assets? This person also will be responsible for the UI parts built in  XML.
+
+The graphics that are being planned are background layouts, button designs, headers for each screen. We will mostly be using images from the public domain from the Internet. We will be using different sounds as well which will also be from the Internet. Glenn Freytag will be responsible for this portion of the application.
+
+(4) The other member (please idenfity here) will be responsible for the Java code. This may include sections on parse.com, Wifi, LBS, maps, Bluetooth, data analytics, etc. Some such as LBS, Wifi, and Bluetooth may also be incorporated at the Processing level.
+
+John Odlum will be responsible for the Java code for the app which will include parse.com, Wifi, and Google Maps.
