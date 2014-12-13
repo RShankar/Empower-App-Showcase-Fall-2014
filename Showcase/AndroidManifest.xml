@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fau.odlum.showcase"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="20" />
+
+    <permission
+        android:name="com.fau.odlum.showcase.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- The following two permissions are not required to use Google Maps Android API v2, but are recommended. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.fau.odlum.showcase.permission.MAPS_RECEIVE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBwnzu-aiooW3XbOf0_au5sEtzYVCOVmrw" />
+
+        <activity
+            android:name=".Showcase"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".NarrowSchools"
+            android:label="@string/title_activity_narrow_schools"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".NarrowTheaters"
+            android:label="@string/title_activity_narrow_theaters"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".NarrowLibraries"
+            android:label="@string/title_activity_narrow_libraries"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".NarrowHospitals"
+            android:label="@string/title_activity_narrow_hospitals"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".NarrowBuses"
+            android:label="@string/title_activity_narrow_buses"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".NarrowRestaurant"
+            android:label="@string/title_activity_narrow_restaurant"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".NarrowMalls"
+            android:label="@string/title_activity_narrow_malls"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".NarrowGrocery"
+            android:label="@string/title_activity_narrow_grocery"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MyFavorites"
+            android:label="@string/title_activity_my_favorites"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".LocationInformation"
+            android:label="@string/title_activity_location_information"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RatingsScreen"
+            android:label="@string/title_activity_ratings_screen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Directions"
+            android:label="@string/title_activity_directions"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MyRatingsComments"
+            android:label="@string/title_activity_my_ratings_comments"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+            
+        </activity>
+        <activity
+            android:name=".About"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        <activity
+            android:name=".CreateAnAccount"
+            android:label="@string/title_activity_create_an_account"
+            android:screenOrientation="portrait" >
+           
+        </activity>
+        <activity
+            android:name=".LocationMap"
+            android:label="@string/title_activity_location_map"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".DialogActivity"
+                  android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity android:name=".DialogActivity2"
+                  android:theme="@android:style/Theme.Dialog">
+        </activity>
+          <activity android:name=".DialogActivity3"
+                  android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity
+            android:name=".ShowcaseSplash"
+            android:label="@string/title_activity_showcase_splash" 
+            android:screenOrientation="portrait" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>            
+        </activity>
+    </application>
+
+</manifest>

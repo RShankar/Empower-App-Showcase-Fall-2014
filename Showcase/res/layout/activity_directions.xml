@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images_6" >
+
+    <TextView
+        android:id="@+id/textViewDirections"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/title_directions"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#0000ff"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/buttonDirectionsBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@android:drawable/btn_default"
+        android:minHeight="50dp"
+        android:minWidth="125dp"
+        android:text="@string/button_back" />
+    
+     <ScrollView
+         android:id="@+id/directionsScroll"
+         android:layout_width="match_parent"
+         android:layout_height="150dp"
+         android:layout_above="@+id/buttonDirectionsBack"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="0dp" >
+
+        <EditText
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:ems="10"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:minHeight="100dp"
+            android:minWidth="500dp"
+            android:textColor="#000000" >
+	
+	        <requestFocus />
+    	</EditText>
+
+    </ScrollView>
+
+    
+
+    <fragment
+        android:id="@+id/map_directions"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/directionsScroll"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp" />
+
+</RelativeLayout>
